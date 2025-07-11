@@ -1,0 +1,71 @@
+using System;
+using System.Runtime.InteropServices;
+
+static public void whatIsMyName()
+{
+    Console.WriteLine(" … ");
+    Console.WriteLine(“시야가 밝아진다.);
+    Console.WriteLine(“주위를 지각할 수 있다. “);
+    Console.WriteLine(“마을, 인간의 마을이 근처인 것 같다.”);
+    Console.Write(“누군가에게 말을 걸자, 인사를 해야지. 내 이름이 뭐더라….“);
+    string myName = "이름없음";
+    myName = Console.ReadLine();
+    Console.WriteLine(“그 단어가 기억난다. 내 이름일까?”);
+    Console.WriteLine($”/“안녕하세요, 저는 {myName} 입니다./“”);
+}
+
+static void Main(string[] args)
+  static void showMain()
+    {
+        Console.Clear();
+        Console.WriteLine("이곳은 인간의 마을, 나는 방랑자.");
+        Console.WriteLine("마을에서 도움을... 물자를 구해야지.");
+        Console.WriteLine("");
+        Console.WriteLine("1. 물거울 : 흔들리는 수면 위에 스스로를 비춰보자. 나는 어떤 상태일까?");
+        Console.WriteLine("2. 품속: 내 품속에 있는 것들을 확인해보자. 무엇이 있을까?");
+        Console.WriteLine("3. 상점: 지나다니는 저 사람은 분명 상인일 것이다. 내게 필요한 것을 구할 수 있어.");
+        Console.WriteLine("");
+    }
+
+class Character
+    {
+        public int Level;
+        public string myName;
+        public string Autognosie;
+        public int Obscure;
+        public int Concrete;
+        public int Life;
+        public int Sanity;
+        public int plusObscure;
+        public int plusConcrete;
+
+        public Character(int level, string myname, string autognosie, int obscure, int concrete, int life, int sanity)
+        {
+            Level = level;
+            Name = name;
+            Autognosie = autognosie;
+            Obscure = obscure;
+            Concrete = concrete;
+            Life = life;
+            Sanity = sanity;
+        }
+        public void AddObscure(int addObscure)
+        {
+            Obscure += addObscure;
+        }
+        public void AddConcrete(int addConcrete)
+        {
+            Concrete += addConcrete;
+        }
+    }
+
+ static void Mirror(Character A)
+    {
+        Console.Clear();
+        Console.WriteLine("나는" + A.myName);
+        Console.WriteLine("Lv. " + A.Level);
+        Console.WriteLine(A.Name + " 내 정체는.... " + A.Autognosie + " 인 것 같다."); )");
+        Console.WriteLine("내가 가진 힘은 " + A.Obscure + " 이고, 물리력은 " + A.Concrete + " 만큼.");
+        Console.WriteLine("생명력은 " + A.Life + " 정도, 돈은... " + A.Sanity + " 만큼 있다.");
+        Console.WriteLine("사람들 덕분에... 힘이 " + A.plusObscure + " 만큼 증가했다.");
+        Console.WriteLine("물리력도... " + A.plusConcrete + "만큼 증가했다.");
